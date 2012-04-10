@@ -1,4 +1,4 @@
-<h1 class="left"><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+<h1 class="left"><a href="{{ root_url }}/">{{ site.title }}</a><span>{{ site.subtitle }}</span></h1>
 <nav class="menu left">{% include navigation.html %}</nav>
 <div class="right">
 	<form class="search right" action="{{ site.simple_search }}" method="get">
@@ -19,7 +19,7 @@
 		<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
 		{% endif %}
 		{% if site.pinterest_user %}
-		<a class="pinterest" href="https://pinterest.com/{{ site.pinterest_user }}" title="Pinterest">Pinterest</a>
+		<a class="pinterest" href="http://www.pinterest.com/{{ site.pinterest_user }}" title="Pinterest">Pinterest</a>
 		{% endif %}
 		{% if site.subscribe_rss %}
 		<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
